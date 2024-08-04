@@ -8,11 +8,18 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "inputs": [
+        "$TURBO_DEFAULT$",
+        ".env.development.local",
+        ".env.local",
+        ".env.development"
+      ]
     },
     "start": {
       "cache": false,
-      "persistent": true
+      "persistent": true,
+      "env": ["TEST_ENV"]
     }
   }
 }
