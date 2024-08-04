@@ -1,0 +1,21 @@
+{
+  "name": "turbo-bun-app",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo build --filter=\"./apps/api\"",
+    "dev": "turbo dev --filter=\"./apps/api\"",
+    "start": "turbo start --filter=\"./apps/api\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "turbo": "2.0.6",
+    "typescript": "5.4.5"
+  },
+  "packageManager": "bun@1.1.18",
+  "engines": {
+    "node": ">=18"
+  }
+}
